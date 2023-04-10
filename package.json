@@ -1,0 +1,23 @@
+{
+  "name": "twitch-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -o build.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerard176/Twitch-clone.git"
+  },
+  "author": "Gerardo Duarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerard176/Twitch-clone/issues"
+  },
+  "homepage": "https://github.com/Gerard176/Twitch-clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
