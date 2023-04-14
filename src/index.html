@@ -5,27 +5,229 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-black">
+<body class="bg-[#121313] ">
     <div for="contenedor-gral" class=" text-white ">
-        <nav class="bg-gray-800 flex h-14" >
-            <div for="logo " class="">
-                logo
+        <nav class="bg-[#181a1a] flex shadow-2xl h-12 justify-between items-center" >
+            <div for="logo " class="font-bold text-sm flex">
+                <button class="mx-3 mt-1">
+                    <img src="../img/twitch-logo-png-1857.png" alt="logo" class="w-9">
+                </button>
+                <button>
+                    <label class="hover:text-blue-400">Explorar</label>
+                </button>
+                <button>
+                    <svg class="w-7 mx-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                      </svg>
+                      
+                </button>
             </div >
                 
-            <div for="buscador">
-                <input type="search">
+            <div for="buscador " class="flex " >
+                <input class="bg-[#374242] px-4 pb-1 w-80 ml-20  rounded-l-md h-8 text-white" type="search" placeholder="Buscar">
+                <button>
+                    <svg class="w-8 px-1  bg-[#2b2f30] rounded-r-md py-1  " "http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    
+                </button>
+                  
             </div >
                 
-            <div for="usuario">
-                Registrarse
+            <div for="usuario" class="flex ">
+                <button class="bg-[#3d3c3c] mx-1 px-2 rounded-md font-bold text-sm py-1">Inciar sesion</button>
+                <button class="bg-[#674daf] mx-1 px-2 rounded-md font-bold text-sm py 1">Registrarse</button>
+                <button>
+                    <svg class="w-5 mx-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                      </svg>
+                    
+                </button>  
             </div>
         </nav>
-        <aside>
+        
+        <div for="content" class="flex">
+            <aside class="w-1/7 ">
+                <div for="active-Streamers" class="bg-[#202122] shadow-inner h-screen block" >
+                    <div class="flex mb-2">
+                        <label class="text-sm mx-4 mt-3  font-bold">CANALES RECOMENDADOS</label> 
+                        <svg  class="w-4 mt-3" "http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/bf1d52e3-b46b-4c07-9b4f-a1ab8c4e40f8-profile_image-70x70.png" alt="auronplay" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >auronplay</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Ready or Not</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">48.382</label>
+                    </div>
+    
+                    <div for="Streamer" class="flex my-1">
+                        <img src="../img/Spreen.png" alt="Spreen" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >ElSpreen</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Charlando</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">34.106</label>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/Robleis.png" alt="Robleis" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >Robleis</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Rust</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">1888</label>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/Rubius.jpg" alt="Rubius" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >Rubius</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Super Mario Maker</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">25.595</label>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/Illojuan.png" alt="auronplay" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >IlloJuan</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Resident Evil 4</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">40.929</label>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/Knecro.jpeg" alt="auronplay" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >KneKro</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Charlando</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">8456</label>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/Quackity.png" alt="auronplay" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >QuackityToo</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Minecraft</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">57.815</label>
+                    </div>
+                    <div for="Streamer " class="flex my-1">
+                        <img src="../img/Amouranth.png" alt="auronplay" class="rounded-full w-7 h-7 mx-3 my-1">
+                        <div class="w-32">
+                            
+                            <label for="nombre" class="text-sm absolute  font-bold text-gray-200 " >AMOURANTH</label>
+                            
+                            <label for="juego" class="text-sm absolute my-4 text-gray-500">Piscinas,jacuzzis</label>    
+                        </div>
+                        <img src="../img/Punto_rojo.png" alt="" class="w-2 h-2 my-2 mx-1">
+                        <label for="viewers" class="text-sm mr-2 ">6941</label>
+                    </div>
+                     
+                </div>
+            </aside>
+            <div for="lista-directos" class="bg-[#121313] w-6/7  shadow-inner ">
+                <div for="slider" >
 
-        </aside>
-        <div for="content">
+                </div>
+                <div for="Contenedor-secundario" class="mx-7 ">
+                    <label class="font-bold text-lg   " ><label class="text-blue-500">Canales en directo</label> que podrian gustarte</label>
+                    <div for="canales de interes" class="grid grid-cols-3 ">
+                        
+                        <div for="directo" class="mr-3">
+                            <label class="bg-red-800 rounded-md px-1 text-sm absolute my-2 mx-2 font-bold">EN DIRECTO</label>
+                            <label class="absolute bg-[#000000a6] mt-36 mb-2 mx-3 rounded-sm px-1 text-sm">34.106 espectadores</label>
+                            <div class=" w-6 absolute bg-blue-700">
 
+                            </div>
+                            <a href="#"><img  class="  rounded-bl-md w-80 "src="../img/DirectoSpreen.jpg" alt="">
+                            </a>                            
+                            <img class="rounded-full w-10 my-3 float-left "  src="../img/Spreen.png" alt="">
+                                
+                            <div class="flex ">
+                                <div class="m-2 ">
+                                    <label class="text-gray-300 font-bold text-sm" >ola</label>
+                                    <label class="block text-sm text-gray-400">ElSpreen</label>
+                                    <label class="block text-sm text-gray-400" >Charlando</label>
+                                    <label  class="bg-[#3a3737d0] rounded-full px-2  font-bold text-xs">Español</label>
+                                    <label class="bg-[#3a3737d0] rounded-full px-2  font-bold text-xs">Spreen</label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div for="directo" class="mr-3  ">
+                            <label class="bg-red-800 rounded-md px-1 text-sm absolute my-2 mx-2 font-bold">EN DIRECTO</label>
+                            <label class="absolute bg-[#000000a6] mt-36 mb-2 mx-3 rounded-sm px-1 text-sm">34.106 espectadores</label>
+                            <div class=" w-6 absolute bg-blue-700">
+
+                            </div>
+                            <a href="#"><img  class="  rounded-bl-md w-80 "src="../img/DirectoSpreen.jpg" alt="">
+                            </a>                            
+                            <img class="rounded-full w-10 my-3 float-left "  src="../img/Spreen.png" alt="">
+                                
+                            <div class="flex ">
+                                <div class="m-2 ">
+                                    <label class="text-gray-300 font-bold text-sm" >ola</label>
+                                    <label class="block text-sm text-gray-400">ElSpreen</label>
+                                    <label class="block text-sm text-gray-400" >Charlando</label>
+                                    <label  class="bg-[#3a3737d0] rounded-full px-2  font-bold text-xs">Español</label>
+                                    <label class="bg-[#3a3737d0] rounded-full px-2  font-bold text-xs">Spreen</label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div for="directo" class="mr-3  2xl:grid-cols-2 ">
+                            <label class="bg-red-800 rounded-md px-1 text-sm absolute my-2 mx-2 font-bold">EN DIRECTO</label>
+                            <label class="absolute bg-[#000000a6] mt-36 mb-2 mx-3 rounded-sm px-1 text-sm">34.106 espectadores</label>
+                            <div class=" w-6 absolute bg-blue-700">
+
+                            </div>
+                            <a href="#"><img  class="  rounded-bl-md w-80 "src="../img/DirectoSpreen.jpg" alt="">
+                            </a>                            
+                            <img class="rounded-full w-10 my-3 float-left "  src="../img/Spreen.png" alt="">
+                                
+                            <div class="flex ">
+                                <div class="m-2 ">
+                                    <label class="text-gray-300 font-bold text-sm" >ola</label>
+                                    <label class="block text-sm text-gray-400">ElSpreen</label>
+                                    <label class="block text-sm text-gray-400" >Charlando</label>
+                                    <label  class="bg-[#3a3737d0] rounded-full px-2  font-bold text-xs">Español</label>
+                                    <label class="bg-[#3a3737d0] rounded-full px-2  font-bold text-xs">Spreen</label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
         </div>
+        
 </div>
 </body>
 </html>
