@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/twitch-logo-png-1857.png">
+  <title>EvilTwitch</title>
 </head>
-<body class="bg-[#121313] ">
+<body class="bg-[#121313] overflow-hidden">
     <div for="contenedor-gral" class=" text-white ">
-        <nav class="bg-[#181a1a] flex shadow-2xl h-12 justify-between items-center" >
+        <nav class="bg-[#181a1a] flex shadow-2xl h-12 justify-between items-center " >
             <div for="logo " class="font-bold text-sm flex">
                 <button class="mx-3 mt-1">
                     <img src="../img/twitch-logo-png-1857.png" alt="logo" class="w-9">
@@ -47,7 +49,7 @@
         </nav>
         
         <div for="content" class="flex">
-            <aside class="w-1/7 ">
+            <aside class="w-80 h-screen  ">
                 <div for="active-Streamers" class="bg-[#202122] shadow-inner h-screen block" >
                     <div class="flex mb-2">
                         <label class="text-sm mx-4 mt-3  font-bold">CANALES RECOMENDADOS</label> 
@@ -147,16 +149,45 @@
                      
                 </div>
             </aside>
-            <div for="lista-directos" class="bg-[#121313] w-6/7  shadow-inner ">
+            <style>
+                #scroll::-webkit-scrollbar{
+                    width: 8px;
+                    
+                    
+                }
+                #scroll::-webkit-scrollbar-track{
+                    background-color: transparent;
+                }
+                #scroll::-webkit-scrollbar-thumb{
+                    background-color: rgb(82, 74, 74);
+                    border-radius: 30px;
+                }
+                #scroll-contenido{
+                    opacity: 1;
+                    transition: opacity 0.3s ease-out;
+                }
+                #scroll-contenido.hide-scrollbar{
+                    opacity: 0;
+                }
+               
+            </style>
+            
+            
+        <div id="scroll" class="h-screen w-screen overflow-y-scroll">
+            <div id="scroll-contenido" for="lista-directos" class="bg-[#121313]  w-6/7 shadow-inner ">
                 <div for="slider" >
 
                 </div>
-                <div for="Contenedor-secundario" class="mx-7 ">
+                <div class="my-2 mx-7">
                     <label class="font-bold text-lg   " ><label class="text-blue-500">Canales en directo</label> que podrian gustarte</label>
+                </div>
+                
                     
-                    <div for="canales de interes" class="flex ">
+                <div for="Contenedor-secundario" class="ml-7 ">
+                    
+                    <div for="canales de interes" class="flex  ">
                         
-                        <div for="directo" class="mr-3   ">
+                        <div for="directo" class="mr-3  relative ">
                             <label class="bg-red-800 rounded-md px-1 text-sm absolute my-2 mx-2 font-bold">EN DIRECTO</label>
                             <label class="absolute bg-[#000000a6] mt-36 mb-2 mx-3 rounded-sm px-1 text-sm">487 espectadores</label>
                             <div class=" w-6 absolute bg-blue-700">
@@ -178,7 +209,7 @@
                             </div>
                             
                         </div>
-                        <div for="directo" class="mr-3 max-lg:hidden ">
+                        <div for="directo" class="mr-3 max-lg:hidden relative">
                             <label class="bg-red-800 rounded-md px-1 text-sm absolute my-2 mx-2 font-bold">EN DIRECTO</label>
                             <label class="absolute bg-[#000000a6] mt-36 mb-2 mx-3 rounded-sm px-1 text-sm">50.206 espectadores</label>
                             <div class=" w-6 absolute bg-blue-700">
@@ -200,7 +231,7 @@
                             </div>
                             
                         </div>
-                        <div for="directo" class="mr-3  max-xl:hidden ">
+                        <div for="directo" class="mr-3  max-xl:hidden relative ">
                             <label class="bg-red-800 rounded-md px-1 text-sm absolute my-2 mx-2 font-bold">EN DIRECTO</label>
                             <label class="absolute bg-[#000000a6] mt-36 mb-2 mx-3 rounded-sm px-1 text-sm">34.106 espectadores</label>
                             <div class=" w-6 absolute bg-blue-700">
@@ -223,9 +254,9 @@
                             
                         </div>
                     </div>
-                    <div class="flex items-center py-6">
-                        <hr width="425px">
-                        <button class="px-3 font-bold text-blue-400 ">Mostrar mas</button>
+                    <div class="flex items-center py-2 max-xl:w-screen max-md:w-96 max-lg:w-2/3 ">
+                        <hr class="fill-gray-700" width="425px">
+                        <button class="px-3 font-bold text-sm text-blue-400 ">Mostrar mas</button>
                         <button>
                             <svg class="w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -235,10 +266,37 @@
                         <hr width="425px">
 
                     </div>
+                    </div>
+                        <div class="my-2 mx-7">
+                        <label class="font-bold text-lg   " ><label class="text-blue-500 hover:decoration-dashed">Categorias </label>que podrian interesarte</label>
+                    </div>
+                    <div for="categorias-de-interes" class="flex gap-3 mx-7">
+
+                        <div for="categoria" class="">
+                            <img src="/img/JustChatting.jpg" alt="Just Chatting">
+                        </div>
+                        <div for="categoria">
+                            <img src="/img/Valorant.jpg" alt="Valorant">
+                        </div>
+                        <div for="categoria">
+                            <img src="/img/lol.jpg" alt="Valorant">
+                        </div>
+                        <div for="categoria">
+                            <img src="/img/Minecraft.jpg" alt="Valorant">
+                        </div>
+                        <div for="categoria">
+                            <img src="/img/Gta5.jpg" alt="Valorant">
+                        </div>
+                        <div for="categoria">
+                            <img src="/img/cs-go.jpg" alt="Valorant">
+                        </div>
+                    </div>
                                         
                 </div>
                 
             </div>
+        </div>    
+           
     
         </div>
         
